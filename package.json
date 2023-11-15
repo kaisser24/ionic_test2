@@ -1,18 +1,18 @@
 {
-  "homepage": "http://kaisser24.github.io/ionic_test",
+  "homepage": "http://kaisser24.github.io/ionic_test2",
   "name": "ionic_test",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test.e2e": "cypress run",
     "test.unit": "vitest",
-    "lint": "eslint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "eslint"
   },
   "dependencies": {
     "@capacitor-community/barcode-scanner": "^4.0.1",
